@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_SupplierBillEntry" targetNamespace="http://tempuri.org/Ds_SupplierBillEntry.xsd" xmlns:mstns="http://tempuri.org/Ds_SupplierBillEntry.xsd" xmlns="http://tempuri.org/Ds_SupplierBillEntry.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ds_SupplierBillEntry" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Ds_SupplierBillEntry" msprop:Generator_UserDSName="Ds_SupplierBillEntry">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_supplier_bill_entry" msprop:Generator_TableClassName="tbl_supplier_bill_entryDataTable" msprop:Generator_TableVarName="tabletbl_supplier_bill_entry" msprop:Generator_TablePropName="tbl_supplier_bill_entry" msprop:Generator_RowDeletingName="tbl_supplier_bill_entryRowDeleting" msprop:Generator_RowChangingName="tbl_supplier_bill_entryRowChanging" msprop:Generator_RowEvHandlerName="tbl_supplier_bill_entryRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_supplier_bill_entryRowDeleted" msprop:Generator_UserTableName="tbl_supplier_bill_entry" msprop:Generator_RowChangedName="tbl_supplier_bill_entryRowChanged" msprop:Generator_RowEvArgName="tbl_supplier_bill_entryRowChangeEvent" msprop:Generator_RowClassName="tbl_supplier_bill_entryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="supplier_date" msprop:Generator_ColumnVarNameInTable="columnsupplier_date" msprop:Generator_ColumnPropNameInRow="supplier_date" msprop:Generator_ColumnPropNameInTable="supplier_dateColumn" msprop:Generator_UserColumnName="supplier_date" type="xs:string" minOccurs="0" />
+              <xs:element name="bill_date" msprop:Generator_ColumnVarNameInTable="columnbill_date" msprop:Generator_ColumnPropNameInRow="bill_date" msprop:Generator_ColumnPropNameInTable="bill_dateColumn" msprop:Generator_UserColumnName="bill_date" type="xs:string" minOccurs="0" />
+              <xs:element name="bill_no" msprop:Generator_ColumnVarNameInTable="columnbill_no" msprop:Generator_ColumnPropNameInRow="bill_no" msprop:Generator_ColumnPropNameInTable="bill_noColumn" msprop:Generator_UserColumnName="bill_no" type="xs:string" minOccurs="0" />
+              <xs:element name="supplier_type" msprop:Generator_ColumnVarNameInTable="columnsupplier_type" msprop:Generator_ColumnPropNameInRow="supplier_type" msprop:Generator_ColumnPropNameInTable="supplier_typeColumn" msprop:Generator_UserColumnName="supplier_type" type="xs:string" minOccurs="0" />
+              <xs:element name="supplier_id" msprop:Generator_ColumnVarNameInTable="columnsupplier_id" msprop:Generator_ColumnPropNameInRow="supplier_id" msprop:Generator_ColumnPropNameInTable="supplier_idColumn" msprop:Generator_UserColumnName="supplier_id" type="xs:string" minOccurs="0" />
+              <xs:element name="press_id" msprop:Generator_ColumnVarNameInTable="columnpress_id" msprop:Generator_ColumnPropNameInRow="press_id" msprop:Generator_ColumnPropNameInTable="press_idColumn" msprop:Generator_UserColumnName="press_id" type="xs:string" minOccurs="0" />
+              <xs:element name="paper_id" msprop:Generator_ColumnVarNameInTable="columnpaper_id" msprop:Generator_ColumnPropNameInRow="paper_id" msprop:Generator_ColumnPropNameInTable="paper_idColumn" msprop:Generator_UserColumnName="paper_id" type="xs:string" minOccurs="0" />
+              <xs:element name="paper_type" msprop:Generator_ColumnVarNameInTable="columnpaper_type" msprop:Generator_ColumnPropNameInRow="paper_type" msprop:Generator_ColumnPropNameInTable="paper_typeColumn" msprop:Generator_UserColumnName="paper_type" type="xs:string" minOccurs="0" />
+              <xs:element name="paper_quantity" msprop:Generator_ColumnVarNameInTable="columnpaper_quantity" msprop:Generator_ColumnPropNameInRow="paper_quantity" msprop:Generator_ColumnPropNameInTable="paper_quantityColumn" msprop:Generator_UserColumnName="paper_quantity" type="xs:string" minOccurs="0" />
+              <xs:element name="prize" msprop:Generator_ColumnVarNameInTable="columnprize" msprop:Generator_ColumnPropNameInRow="prize" msprop:Generator_ColumnPropNameInTable="prizeColumn" msprop:Generator_UserColumnName="prize" type="xs:string" minOccurs="0" />
+              <xs:element name="description" msprop:Generator_ColumnVarNameInTable="columndescription" msprop:Generator_ColumnPropNameInRow="description" msprop:Generator_ColumnPropNameInTable="descriptionColumn" msprop:Generator_UserColumnName="description" type="xs:string" minOccurs="0" />
+              <xs:element name="bill_amount" msprop:Generator_ColumnVarNameInTable="columnbill_amount" msprop:Generator_ColumnPropNameInRow="bill_amount" msprop:Generator_ColumnPropNameInTable="bill_amountColumn" msprop:Generator_UserColumnName="bill_amount" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

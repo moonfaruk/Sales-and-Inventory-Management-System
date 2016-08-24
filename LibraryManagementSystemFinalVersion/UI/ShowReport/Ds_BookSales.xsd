@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_BookSales" targetNamespace="http://tempuri.org/Ds_BookSales.xsd" xmlns:mstns="http://tempuri.org/Ds_BookSales.xsd" xmlns="http://tempuri.org/Ds_BookSales.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="LibraryManagementApp" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LibraryManagementApp (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.LibraryManagementApp.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_bookSalesViewTableAdapter" GeneratorDataComponentClassName="tbl_bookSalesViewTableAdapter" Name="tbl_bookSalesView" UserDataComponentName="tbl_bookSalesViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LibraryManagementApp (Web.config)" DbObjectName="LibraryManagementSystemDB.dbo.tbl_bookSalesView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select * from tbl_bookSalesView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="date" DataSetColumn="date" />
+              <Mapping SourceColumn="district_name" DataSetColumn="district_name" />
+              <Mapping SourceColumn="party_code" DataSetColumn="party_code" />
+              <Mapping SourceColumn="memo_no" DataSetColumn="memo_no" />
+              <Mapping SourceColumn="sales_type" DataSetColumn="sales_type" />
+              <Mapping SourceColumn="year" DataSetColumn="year" />
+              <Mapping SourceColumn="group_name" DataSetColumn="group_name" />
+              <Mapping SourceColumn="book_name" DataSetColumn="book_name" />
+              <Mapping SourceColumn="quantity" DataSetColumn="quantity" />
+              <Mapping SourceColumn="book_rate" DataSetColumn="book_rate" />
+              <Mapping SourceColumn="book_commission" DataSetColumn="book_commission" />
+              <Mapping SourceColumn="sales_rate" DataSetColumn="sales_rate" />
+              <Mapping SourceColumn="total" DataSetColumn="total" />
+              <Mapping SourceColumn="packing" DataSetColumn="packing" />
+              <Mapping SourceColumn="bonus" DataSetColumn="bonus" />
+              <Mapping SourceColumn="total_price" DataSetColumn="total_price" />
+              <Mapping SourceColumn="payment_amount" DataSetColumn="payment_amount" />
+              <Mapping SourceColumn="dues" DataSetColumn="dues" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ds_BookSales" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Ds_BookSales" msprop:Generator_UserDSName="Ds_BookSales">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_bookSalesView" msprop:Generator_TableClassName="tbl_bookSalesViewDataTable" msprop:Generator_TableVarName="tabletbl_bookSalesView" msprop:Generator_TablePropName="tbl_bookSalesView" msprop:Generator_RowDeletingName="tbl_bookSalesViewRowDeleting" msprop:Generator_RowChangingName="tbl_bookSalesViewRowChanging" msprop:Generator_RowEvHandlerName="tbl_bookSalesViewRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_bookSalesViewRowDeleted" msprop:Generator_UserTableName="tbl_bookSalesView" msprop:Generator_RowChangedName="tbl_bookSalesViewRowChanged" msprop:Generator_RowEvArgName="tbl_bookSalesViewRowChangeEvent" msprop:Generator_RowClassName="tbl_bookSalesViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="date" msprop:Generator_ColumnVarNameInTable="columndate" msprop:Generator_ColumnPropNameInRow="date" msprop:Generator_ColumnPropNameInTable="dateColumn" msprop:Generator_UserColumnName="date" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="district_name" msprop:Generator_ColumnVarNameInTable="columndistrict_name" msprop:Generator_ColumnPropNameInRow="district_name" msprop:Generator_ColumnPropNameInTable="district_nameColumn" msprop:Generator_UserColumnName="district_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="party_code" msprop:Generator_ColumnVarNameInTable="columnparty_code" msprop:Generator_ColumnPropNameInRow="party_code" msprop:Generator_ColumnPropNameInTable="party_codeColumn" msprop:Generator_UserColumnName="party_code" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="memo_no" msprop:Generator_ColumnVarNameInTable="columnmemo_no" msprop:Generator_ColumnPropNameInRow="memo_no" msprop:Generator_ColumnPropNameInTable="memo_noColumn" msprop:Generator_UserColumnName="memo_no" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sales_type" msprop:Generator_ColumnVarNameInTable="columnsales_type" msprop:Generator_ColumnPropNameInRow="sales_type" msprop:Generator_ColumnPropNameInTable="sales_typeColumn" msprop:Generator_UserColumnName="sales_type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="year" msprop:Generator_ColumnVarNameInTable="columnyear" msprop:Generator_ColumnPropNameInRow="year" msprop:Generator_ColumnPropNameInTable="yearColumn" msprop:Generator_UserColumnName="year" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="group_name" msprop:Generator_ColumnVarNameInTable="columngroup_name" msprop:Generator_ColumnPropNameInRow="group_name" msprop:Generator_ColumnPropNameInTable="group_nameColumn" msprop:Generator_UserColumnName="group_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="book_name" msprop:Generator_ColumnVarNameInTable="columnbook_name" msprop:Generator_ColumnPropNameInRow="book_name" msprop:Generator_ColumnPropNameInTable="book_nameColumn" msprop:Generator_UserColumnName="book_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="quantity" msprop:Generator_ColumnVarNameInTable="columnquantity" msprop:Generator_ColumnPropNameInRow="quantity" msprop:Generator_ColumnPropNameInTable="quantityColumn" msprop:Generator_UserColumnName="quantity" type="xs:double" minOccurs="0" />
+              <xs:element name="book_rate" msprop:Generator_ColumnVarNameInTable="columnbook_rate" msprop:Generator_ColumnPropNameInRow="book_rate" msprop:Generator_ColumnPropNameInTable="book_rateColumn" msprop:Generator_UserColumnName="book_rate" type="xs:double" minOccurs="0" />
+              <xs:element name="book_commission" msprop:Generator_ColumnVarNameInTable="columnbook_commission" msprop:Generator_ColumnPropNameInRow="book_commission" msprop:Generator_ColumnPropNameInTable="book_commissionColumn" msprop:Generator_UserColumnName="book_commission" type="xs:double" minOccurs="0" />
+              <xs:element name="sales_rate" msprop:Generator_ColumnVarNameInTable="columnsales_rate" msprop:Generator_ColumnPropNameInRow="sales_rate" msprop:Generator_ColumnPropNameInTable="sales_rateColumn" msprop:Generator_UserColumnName="sales_rate" type="xs:double" minOccurs="0" />
+              <xs:element name="total" msprop:Generator_ColumnVarNameInTable="columntotal" msprop:Generator_ColumnPropNameInRow="total" msprop:Generator_ColumnPropNameInTable="totalColumn" msprop:Generator_UserColumnName="total" type="xs:double" minOccurs="0" />
+              <xs:element name="packing" msprop:Generator_ColumnVarNameInTable="columnpacking" msprop:Generator_ColumnPropNameInRow="packing" msprop:Generator_ColumnPropNameInTable="packingColumn" msprop:Generator_UserColumnName="packing" type="xs:double" minOccurs="0" />
+              <xs:element name="bonus" msprop:Generator_ColumnVarNameInTable="columnbonus" msprop:Generator_ColumnPropNameInRow="bonus" msprop:Generator_ColumnPropNameInTable="bonusColumn" msprop:Generator_UserColumnName="bonus" type="xs:double" minOccurs="0" />
+              <xs:element name="total_price" msprop:Generator_ColumnVarNameInTable="columntotal_price" msprop:Generator_ColumnPropNameInRow="total_price" msprop:Generator_ColumnPropNameInTable="total_priceColumn" msprop:Generator_UserColumnName="total_price" type="xs:double" minOccurs="0" />
+              <xs:element name="payment_amount" msprop:Generator_ColumnVarNameInTable="columnpayment_amount" msprop:Generator_ColumnPropNameInRow="payment_amount" msprop:Generator_ColumnPropNameInTable="payment_amountColumn" msprop:Generator_UserColumnName="payment_amount" type="xs:double" minOccurs="0" />
+              <xs:element name="dues" msprop:Generator_ColumnVarNameInTable="columndues" msprop:Generator_ColumnPropNameInRow="dues" msprop:Generator_ColumnPropNameInTable="duesColumn" msprop:Generator_UserColumnName="dues" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

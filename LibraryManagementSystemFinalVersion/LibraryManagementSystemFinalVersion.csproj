@@ -1,0 +1,1210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ADC16FA4-AB27-4DE9-BF89-74BDAA435ECE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LibraryManagementSystemFinalVersion</RootNamespace>
+    <AssemblyName>LibraryManagementSystemFinalVersion</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\jquery-2.2.0.intellisense.js" />
+    <Content Include="Content\bootstrap-datepicker.css" />
+    <Content Include="Content\bootstrap-datepicker.min.css" />
+    <Content Include="Content\bootstrap-datepicker.standalone.css" />
+    <Content Include="Content\bootstrap-datepicker.standalone.min.css" />
+    <Content Include="Content\bootstrap-datepicker3.css" />
+    <Content Include="Content\bootstrap-datepicker3.min.css" />
+    <Content Include="Content\bootstrap-datepicker3.standalone.css" />
+    <Content Include="Content\bootstrap-datepicker3.standalone.min.css" />
+    <Content Include="Content\themes\base\accordion.css" />
+    <Content Include="Content\themes\base\all.css" />
+    <Content Include="Content\themes\base\autocomplete.css" />
+    <Content Include="Content\themes\base\base.css" />
+    <Content Include="Content\themes\base\button.css" />
+    <Content Include="Content\themes\base\core.css" />
+    <Content Include="Content\themes\base\datepicker.css" />
+    <Content Include="Content\themes\base\dialog.css" />
+    <Content Include="Content\themes\base\draggable.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\menu.css" />
+    <Content Include="Content\themes\base\progressbar.css" />
+    <Content Include="Content\themes\base\resizable.css" />
+    <Content Include="Content\themes\base\selectable.css" />
+    <Content Include="Content\themes\base\selectmenu.css" />
+    <Content Include="Content\themes\base\slider.css" />
+    <Content Include="Content\themes\base\sortable.css" />
+    <Content Include="Content\themes\base\spinner.css" />
+    <Content Include="Content\themes\base\tabs.css" />
+    <Content Include="Content\themes\base\theme.css" />
+    <Content Include="Content\themes\base\tooltip.css" />
+    <Content Include="Content\themes\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\smoothness\jquery-ui.smoothness.css" />
+    <Content Include="Content\themes\smoothness\jquery-ui.smoothness.min.css" />
+    <Content Include="Content\themes\ui-darkness\images\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="Content\themes\ui-darkness\images\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="Content\themes\ui-darkness\images\ui-bg_glass_20_555555_1x400.png" />
+    <Content Include="Content\themes\ui-darkness\images\ui-bg_glass_40_0078a3_1x400.png" />
+    <Content Include="Content\themes\ui-darkness\images\ui-bg_glass_40_ffc73d_1x400.png" />
+    <Content Include="Content\themes\ui-darkness\images\ui-bg_gloss-wave_25_333333_500x100.png" />
+    <Content Include="Content\themes\ui-darkness\images\ui-bg_highlight-soft_80_eeeeee_1x100.png" />
+    <Content Include="Content\themes\ui-darkness\images\ui-bg_inset-soft_25_000000_1x100.png" />
+    <Content Include="Content\themes\ui-darkness\images\ui-bg_inset-soft_30_f58400_1x100.png" />
+    <Content Include="Content\themes\ui-darkness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\ui-darkness\images\ui-icons_4b8e0b_256x240.png" />
+    <Content Include="Content\themes\ui-darkness\images\ui-icons_a83300_256x240.png" />
+    <Content Include="Content\themes\ui-darkness\images\ui-icons_cccccc_256x240.png" />
+    <Content Include="Content\themes\ui-darkness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\themes\ui-darkness\jquery-ui.ui-darkness.css" />
+    <Content Include="Content\themes\ui-darkness\jquery-ui.ui-darkness.min.css" />
+    <Content Include="Content\themes\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Content\themes\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Content\themes\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Content\themes\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Content\themes\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Content\themes\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Content\themes\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Content\themes\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Content\themes\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Content\themes\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Content\themes\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Content\themes\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\themes\ui-lightness\jquery-ui.ui-lightness.css" />
+    <Content Include="Content\themes\ui-lightness\jquery-ui.ui-lightness.min.css" />
+    <Content Include="Images\banner.PNG" />
+    <Content Include="Scripts\bootstrap-datepicker.js" />
+    <Content Include="Scripts\bootstrap-datepicker.min.js" />
+    <Content Include="Scripts\jquery-2.2.0.js" />
+    <Content Include="Scripts\jquery-2.2.0.min.js" />
+    <Content Include="Scripts\jquery-2.2.0.min.map" />
+    <Content Include="UI\AddBankDeposit.aspx" />
+    <Content Include="UI\AddBankLedger.aspx" />
+    <Content Include="UI\AddBankWithdraw.aspx" />
+    <Content Include="UI\AddBinder.aspx" />
+    <Content Include="UI\AddBinderOrder.aspx" />
+    <Content Include="UI\AddBinderOrderCancel.aspx" />
+    <Content Include="UI\AddBinderReceive.aspx" />
+    <Content Include="UI\AddBonus.aspx" />
+    <Content Include="UI\AddBookInfo.aspx" />
+    <Content Include="UI\AddBookReject.aspx" />
+    <Content Include="UI\AddBookReturn.aspx" />
+    <Content Include="UI\AddBookSales.aspx" />
+    <Content Include="UI\AddBookSpacimen.aspx" />
+    <Content Include="UI\AddCoverReceived.aspx" />
+    <Content Include="UI\AddCoverSupply.aspx" />
+    <Content Include="UI\AddDailyCashReport.aspx" />
+    <Content Include="UI\AddEmployeeBillEntry.aspx" />
+    <Content Include="UI\AddEmployeeLedger.aspx" />
+    <Content Include="UI\AddEmployeeSalaryPayment.aspx" />
+    <Content Include="UI\AddGroup.aspx" />
+    <Content Include="UI\AddLoanPartyLedger.aspx" />
+    <Content Include="UI\AddMainBook.aspx" />
+    <Content Include="UI\AddMoneyReceipt.aspx" />
+    <Content Include="UI\AddOtherBillPayment.aspx" />
+    <Content Include="UI\AddOtherGroup.aspx" />
+    <Content Include="UI\AddOthersLedger.aspx" />
+    <Content Include="UI\AddPaperOrder.aspx" />
+    <Content Include="UI\AddPaperPrint.aspx" />
+    <Content Include="UI\AddPaperTransfer.aspx" />
+    <Content Include="UI\AddPersonalLoanTaken.aspx" />
+    <Content Include="UI\AddSupplierBillEntry.aspx" />
+    <Content Include="UI\AddSupplierBillPayment.aspx" />
+    <Content Include="UI\AddSupplierLedger.aspx" />
+    <Content Include="UI\AddWritter.aspx" />
+    <Content Include="UI\ShowReport\BankDepositReport.aspx" />
+    <Content Include="UI\ShowReport\BinderOrderReport.aspx" />
+    <Content Include="UI\ShowReport\BinderReceiveReport.aspx" />
+    <Content Include="UI\ShowReport\BookReturnReport.aspx" />
+    <Content Include="UI\ShowReport\BookSalesReport.aspx" />
+    <Content Include="UI\ShowReport\BookSpecimanReport.aspx" />
+    <Content Include="UI\ShowReport\CoverReceivedReport.aspx" />
+    <Content Include="UI\ShowReport\CoverSupplyReport.aspx" />
+    <Content Include="UI\ShowReport\Ds_Emp_Party_Bank.xsc">
+      <DependentUpon>Ds_Emp_Party_Bank.xsd</DependentUpon>
+    </Content>
+    <Content Include="UI\ShowReport\Ds_EmployeeBillEntry.xsc">
+      <DependentUpon>Ds_EmployeeBillEntry.xsd</DependentUpon>
+    </Content>
+    <Content Include="UI\ShowReport\Ds_BankDeposit.xsc">
+      <DependentUpon>Ds_BankDeposit.xsd</DependentUpon>
+    </Content>
+    <None Include="UI\ShowReport\Ds_BankDeposit.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_BankDeposit.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="UI\ShowReport\Ds_BankDeposit.xss">
+      <DependentUpon>Ds_BankDeposit.xsd</DependentUpon>
+    </Content>
+    <Content Include="UI\ShowReport\Ds_BinderOrder.xsc">
+      <DependentUpon>Ds_BinderOrder.xsd</DependentUpon>
+    </Content>
+    <None Include="UI\ShowReport\Ds_BinderOrder.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_BinderOrder.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="UI\ShowReport\Ds_BinderOrder.xss">
+      <DependentUpon>Ds_BinderOrder.xsd</DependentUpon>
+    </Content>
+    <Content Include="UI\ShowReport\Ds_CoverSupply.xsc">
+      <DependentUpon>Ds_CoverSupply.xsd</DependentUpon>
+    </Content>
+    <Content Include="UI\ShowReport\Ds_BinderReceive.xsc">
+      <DependentUpon>Ds_BinderReceive.xsd</DependentUpon>
+    </Content>
+    <None Include="UI\ShowReport\Ds_BinderReceive.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_BinderReceive.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="UI\ShowReport\Ds_BinderReceive.xss">
+      <DependentUpon>Ds_BinderReceive.xsd</DependentUpon>
+    </Content>
+    <Content Include="UI\ShowReport\Ds_CoverReceived.xsc">
+      <DependentUpon>Ds_CoverReceived.xsd</DependentUpon>
+    </Content>
+    <Content Include="UI\ShowReport\Ds_BookReturn.xsc">
+      <DependentUpon>Ds_BookReturn.xsd</DependentUpon>
+    </Content>
+    <None Include="UI\ShowReport\Ds_BookReturn.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_BookReturn.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="UI\ShowReport\Ds_BookReturn.xss">
+      <DependentUpon>Ds_BookReturn.xsd</DependentUpon>
+    </Content>
+    <Content Include="UI\ShowReport\Ds_BookSpeciman.xsc">
+      <DependentUpon>Ds_BookSpeciman.xsd</DependentUpon>
+    </Content>
+    <Content Include="UI\ShowReport\Ds_BookSales.xsc">
+      <DependentUpon>Ds_BookSales.xsd</DependentUpon>
+    </Content>
+    <None Include="UI\ShowReport\Ds_BookSales.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_BookSales.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="UI\ShowReport\Ds_BookSales.xss">
+      <DependentUpon>Ds_BookSales.xsd</DependentUpon>
+    </Content>
+    <None Include="UI\ShowReport\Ds_BookSpeciman.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_BookSpeciman.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="UI\ShowReport\Ds_BookSpeciman.xss">
+      <DependentUpon>Ds_BookSpeciman.xsd</DependentUpon>
+    </Content>
+    <None Include="UI\ShowReport\Ds_CoverReceived.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_CoverReceived.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="UI\ShowReport\Ds_CoverReceived.xss">
+      <DependentUpon>Ds_CoverReceived.xsd</DependentUpon>
+    </Content>
+    <None Include="UI\ShowReport\Ds_CoverSupply.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_CoverSupply.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="UI\ShowReport\Ds_CoverSupply.xss">
+      <DependentUpon>Ds_CoverSupply.xsd</DependentUpon>
+    </Content>
+    <None Include="UI\ShowReport\Ds_EmployeeBillEntry.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_EmployeeBillEntry.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="UI\ShowReport\Ds_EmployeeBillEntry.xss">
+      <DependentUpon>Ds_EmployeeBillEntry.xsd</DependentUpon>
+    </Content>
+    <None Include="UI\ShowReport\Ds_Emp_Party_Bank.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Emp_Party_Bank.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="UI\ShowReport\Ds_Emp_Party_Bank.xss">
+      <DependentUpon>Ds_Emp_Party_Bank.xsd</DependentUpon>
+    </Content>
+    <Content Include="UI\ShowReport\Ds_SupplierBillEntry.xsc">
+      <DependentUpon>Ds_SupplierBillEntry.xsd</DependentUpon>
+    </Content>
+    <Content Include="UI\ShowReport\Ds_OthersPayment.xsc">
+      <DependentUpon>Ds_OthersPayment.xsd</DependentUpon>
+    </Content>
+    <Content Include="UI\ShowReport\Ds_MoneyReceipt.xsc">
+      <DependentUpon>Ds_MoneyReceipt.xsd</DependentUpon>
+    </Content>
+    <None Include="UI\ShowReport\Ds_MoneyReceipt.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_MoneyReceipt.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="UI\ShowReport\Ds_MoneyReceipt.xss">
+      <DependentUpon>Ds_MoneyReceipt.xsd</DependentUpon>
+    </Content>
+    <None Include="UI\ShowReport\Ds_OthersPayment.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_OthersPayment.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="UI\ShowReport\Ds_OthersPayment.xss">
+      <DependentUpon>Ds_OthersPayment.xsd</DependentUpon>
+    </Content>
+    <Content Include="UI\ShowReport\Ds_PaperOrder.xsc">
+      <DependentUpon>Ds_PaperOrder.xsd</DependentUpon>
+    </Content>
+    <None Include="UI\ShowReport\Ds_PaperOrder.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_PaperOrder.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="UI\ShowReport\Ds_PaperOrder.xss">
+      <DependentUpon>Ds_PaperOrder.xsd</DependentUpon>
+    </Content>
+    <None Include="UI\ShowReport\Ds_SupplierBillEntry.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_SupplierBillEntry.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="UI\ShowReport\Ds_SupplierBillEntry.xss">
+      <DependentUpon>Ds_SupplierBillEntry.xsd</DependentUpon>
+    </Content>
+    <Content Include="UI\ShowReport\Ds_SupplierBillPayment.xsc">
+      <DependentUpon>Ds_SupplierBillPayment.xsd</DependentUpon>
+    </Content>
+    <None Include="UI\ShowReport\Ds_SupplierBillPayment.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_SupplierBillPayment.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="UI\ShowReport\Ds_SupplierBillPayment.xss">
+      <DependentUpon>Ds_SupplierBillPayment.xsd</DependentUpon>
+    </Content>
+    <Content Include="UI\ShowReport\DS_SupplierLedger.xsc">
+      <DependentUpon>DS_SupplierLedger.xsd</DependentUpon>
+    </Content>
+    <None Include="UI\ShowReport\DS_SupplierLedger.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_SupplierLedger.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="UI\ShowReport\DS_SupplierLedger.xss">
+      <DependentUpon>DS_SupplierLedger.xsd</DependentUpon>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\custom-style.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-ui-1.11.4.js" />
+    <Content Include="Scripts\jquery-ui-1.11.4.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ar.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.az.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.bg.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.bs.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ca.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.cs.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.cy.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.da.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.de.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.el.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.en-GB.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.eo.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.es.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.et.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.eu.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.fa.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.fi.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.fo.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.fr-CH.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.fr.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.gl.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.he.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.hr.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.hu.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.hy.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.id.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.is.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.it-CH.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.it.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ja.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ka.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.kh.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.kk.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ko.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.kr.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.lt.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.lv.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.me.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.mk.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.mn.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ms.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.nb.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.nl-BE.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.nl.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.no.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.pl.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.pt-BR.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.pt.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ro.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.rs-latin.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.rs.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.ru.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.sk.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.sl.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.sq.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.sr-latin.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.sr.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.sv.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.sw.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.th.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.tr.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.uk.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.vi.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.zh-CN.min.js" />
+    <Content Include="Scripts\locales\bootstrap-datepicker.zh-TW.min.js" />
+    <Content Include="Scripts\ScrollableGridPlugin.js" />
+    <Content Include="UI\AddBankAccount.aspx" />
+    <Content Include="UI\AddDistrict.aspx" />
+    <Content Include="UI\AddDivision.aspx" />
+    <Content Include="UI\AddEmployee.aspx" />
+    <Content Include="UI\AddLiminationInfo.aspx" />
+    <Content Include="UI\AddLoanParty.aspx" />
+    <Content Include="UI\AddPaper.aspx" />
+    <Content Include="UI\AddParty.aspx" />
+    <Content Include="UI\AddpressInfo.aspx" />
+    <Content Include="UI\AddShope.aspx" />
+    <Content Include="UI\AddSpacymenParty.aspx" />
+    <Content Include="UI\AddSupplierInfo.aspx" />
+    <Content Include="UI\Home.aspx" />
+    <Content Include="UI\ShowReport\EmployeeBillEntryReport.aspx" />
+    <Content Include="UI\ShowReport\Emp_Party_BankReport.aspx" />
+    <Content Include="UI\ShowReport\MoneyReceiptReport.aspx" />
+    <Content Include="UI\ShowReport\OthersPaymentReport.aspx" />
+    <Content Include="UI\ShowReport\PaperOrderReport.aspx" />
+    <Content Include="UI\ShowReport\SupplierBillEntryReport.aspx" />
+    <Content Include="UI\ShowReport\SupplierBillPaymentReport.aspx" />
+    <Content Include="UI\ShowReport\SupplierLedgerReport.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="UI\Index.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\BankDepositManager.cs" />
+    <Compile Include="BLL\BankManager.cs" />
+    <Compile Include="BLL\BankWithdrawManager.cs" />
+    <Compile Include="BLL\BinderManager.cs" />
+    <Compile Include="BLL\BinderOrderCancelManager.cs" />
+    <Compile Include="BLL\BinderOrderManager.cs" />
+    <Compile Include="BLL\BinderReceiveManager.cs" />
+    <Compile Include="BLL\BonusManager.cs" />
+    <Compile Include="BLL\BookInfoManager.cs" />
+    <Compile Include="BLL\BookRejectManager.cs" />
+    <Compile Include="BLL\BookReturnManager.cs" />
+    <Compile Include="BLL\BookSalesManager.cs" />
+    <Compile Include="BLL\BookSpecimanManager.cs" />
+    <Compile Include="BLL\CoverReceivedManager.cs" />
+    <Compile Include="BLL\CoverSupplyManager.cs" />
+    <Compile Include="BLL\DistrictManager.cs" />
+    <Compile Include="BLL\DivisionManager.cs" />
+    <Compile Include="BLL\EmployeeManager.cs" />
+    <Compile Include="BLL\EmployeeSalaryBillEntryManager.cs" />
+    <Compile Include="BLL\EmployeeSalaryPaymentManager.cs" />
+    <Compile Include="BLL\GroupManager.cs" />
+    <Compile Include="BLL\LoanManager.cs" />
+    <Compile Include="BLL\MainBookManager.cs" />
+    <Compile Include="BLL\MoneyReceiptManager.cs" />
+    <Compile Include="BLL\OtherGroupManager.cs" />
+    <Compile Include="BLL\OthersBillPaymentManager.cs" />
+    <Compile Include="BLL\PaperManager.cs" />
+    <Compile Include="BLL\PaperOrderManager.cs" />
+    <Compile Include="BLL\PaperPrintManager.cs" />
+    <Compile Include="BLL\PaperTransferManager.cs" />
+    <Compile Include="BLL\PartyManager.cs" />
+    <Compile Include="BLL\PersonalLoanPaymentManager.cs" />
+    <Compile Include="BLL\PPLiminationManager.cs" />
+    <Compile Include="BLL\PressManager.cs" />
+    <Compile Include="BLL\ShopeManager.cs" />
+    <Compile Include="BLL\SpacymenPartyManager.cs" />
+    <Compile Include="BLL\SupplierBillEntryManager.cs" />
+    <Compile Include="BLL\SupplierBillPaymentManager.cs" />
+    <Compile Include="BLL\SupplierManager.cs" />
+    <Compile Include="BLL\WritterManager.cs" />
+    <Compile Include="DAL\BankDepositGateway.cs" />
+    <Compile Include="DAL\BankGateway.cs" />
+    <Compile Include="DAL\BankWithdrawGateway.cs" />
+    <Compile Include="DAL\BinderGateway.cs" />
+    <Compile Include="DAL\BinderOrderCancelGateway.cs" />
+    <Compile Include="DAL\BinderOrderGateway.cs" />
+    <Compile Include="DAL\BinderReceiveGateway.cs" />
+    <Compile Include="DAL\BonusGateway.cs" />
+    <Compile Include="DAL\BookInfoGateway.cs" />
+    <Compile Include="DAL\BookRejectGateway.cs" />
+    <Compile Include="DAL\BookReturnGateway.cs" />
+    <Compile Include="DAL\BookSalesGateway.cs" />
+    <Compile Include="DAL\BookSpecimanGateway.cs" />
+    <Compile Include="DAL\CoverReceivedGateway.cs" />
+    <Compile Include="DAL\CoverSupplyGateway.cs" />
+    <Compile Include="DAL\DistrictGateway.cs" />
+    <Compile Include="DAL\DivisionGateway.cs" />
+    <Compile Include="DAL\EmployeeGateway.cs" />
+    <Compile Include="DAL\EmployeeSalaryBillEntryGateway.cs" />
+    <Compile Include="DAL\EmployeeSalaryPaymentGateway.cs" />
+    <Compile Include="DAL\GroupGateway.cs" />
+    <Compile Include="DAL\LoanGateway.cs" />
+    <Compile Include="DAL\MainBookGateway.cs" />
+    <Compile Include="DAL\MoneyReceiptGateway.cs" />
+    <Compile Include="DAL\OtherGroupGateway.cs" />
+    <Compile Include="DAL\OthersBillPaymentGateway.cs" />
+    <Compile Include="DAL\PaperGateway.cs" />
+    <Compile Include="DAL\PaperOrderGateway.cs" />
+    <Compile Include="DAL\PaperPrintGateway.cs" />
+    <Compile Include="DAL\PaperTransferGateway.cs" />
+    <Compile Include="DAL\PartyGateway.cs" />
+    <Compile Include="DAL\PersonalLoanPaymentGateway.cs" />
+    <Compile Include="DAL\PPLiminationGateway.cs" />
+    <Compile Include="DAL\PressGateway.cs" />
+    <Compile Include="DAL\ShopeGateway.cs" />
+    <Compile Include="DAL\SpacymenPartyGateway.cs" />
+    <Compile Include="DAL\SupplierBillEntryGateway.cs" />
+    <Compile Include="DAL\SupplierBillPaymentGateway.cs" />
+    <Compile Include="DAL\SupplierGateway.cs" />
+    <Compile Include="DAL\WritterGateway.cs" />
+    <Compile Include="MODEL\BankAccount.cs" />
+    <Compile Include="MODEL\BankDeposit.cs" />
+    <Compile Include="MODEL\BankWithdraw.cs" />
+    <Compile Include="MODEL\Binder.cs" />
+    <Compile Include="MODEL\BinderOrder.cs" />
+    <Compile Include="MODEL\BinderOrderCancel.cs" />
+    <Compile Include="MODEL\BinderReceive.cs" />
+    <Compile Include="MODEL\Bonus.cs" />
+    <Compile Include="MODEL\BookInfo.cs" />
+    <Compile Include="MODEL\BookReject.cs" />
+    <Compile Include="MODEL\BookReturn.cs" />
+    <Compile Include="MODEL\BookSales.cs" />
+    <Compile Include="MODEL\BookSpeciman.cs" />
+    <Compile Include="MODEL\CoverReceived.cs" />
+    <Compile Include="MODEL\CoverSupply.cs" />
+    <Compile Include="MODEL\District.cs" />
+    <Compile Include="MODEL\Division.cs" />
+    <Compile Include="MODEL\Employee.cs" />
+    <Compile Include="MODEL\EmployeeSalaryBillEntry.cs" />
+    <Compile Include="MODEL\EmployeeSalaryPayment.cs" />
+    <Compile Include="MODEL\Group.cs" />
+    <Compile Include="MODEL\LoanParty.cs" />
+    <Compile Include="MODEL\MainBook.cs" />
+    <Compile Include="MODEL\MoneyReceipt.cs" />
+    <Compile Include="MODEL\OthersBillPayment.cs" />
+    <Compile Include="MODEL\OthersGroup.cs" />
+    <Compile Include="MODEL\Paper.cs" />
+    <Compile Include="MODEL\PaperOrder.cs" />
+    <Compile Include="MODEL\PaperPrint.cs" />
+    <Compile Include="MODEL\PaperTransfer.cs" />
+    <Compile Include="MODEL\Party.cs" />
+    <Compile Include="MODEL\PersonalLoanPayment.cs" />
+    <Compile Include="MODEL\PPLimination.cs" />
+    <Compile Include="MODEL\Press.cs" />
+    <Compile Include="MODEL\Shope.cs" />
+    <Compile Include="MODEL\SpacymenParty.cs" />
+    <Compile Include="MODEL\Supplier.cs" />
+    <Compile Include="MODEL\SupplierBillEntry.cs" />
+    <Compile Include="MODEL\SupplierBillPayment.cs" />
+    <Compile Include="MODEL\SupplierLedger.cs" />
+    <Compile Include="MODEL\Writter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\AddBankAccount.aspx.cs">
+      <DependentUpon>AddBankAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddBankAccount.aspx.designer.cs">
+      <DependentUpon>AddBankAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddBankDeposit.aspx.cs">
+      <DependentUpon>AddBankDeposit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddBankDeposit.aspx.designer.cs">
+      <DependentUpon>AddBankDeposit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddBankLedger.aspx.cs">
+      <DependentUpon>AddBankLedger.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddBankLedger.aspx.designer.cs">
+      <DependentUpon>AddBankLedger.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddBankWithdraw.aspx.cs">
+      <DependentUpon>AddBankWithdraw.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddBankWithdraw.aspx.designer.cs">
+      <DependentUpon>AddBankWithdraw.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddBinder.aspx.cs">
+      <DependentUpon>AddBinder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddBinder.aspx.designer.cs">
+      <DependentUpon>AddBinder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddBinderOrder.aspx.cs">
+      <DependentUpon>AddBinderOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddBinderOrder.aspx.designer.cs">
+      <DependentUpon>AddBinderOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddBinderOrderCancel.aspx.cs">
+      <DependentUpon>AddBinderOrderCancel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddBinderOrderCancel.aspx.designer.cs">
+      <DependentUpon>AddBinderOrderCancel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddBinderReceive.aspx.cs">
+      <DependentUpon>AddBinderReceive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddBinderReceive.aspx.designer.cs">
+      <DependentUpon>AddBinderReceive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddBonus.aspx.cs">
+      <DependentUpon>AddBonus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddBonus.aspx.designer.cs">
+      <DependentUpon>AddBonus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddBookInfo.aspx.cs">
+      <DependentUpon>AddBookInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddBookInfo.aspx.designer.cs">
+      <DependentUpon>AddBookInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddBookReject.aspx.cs">
+      <DependentUpon>AddBookReject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddBookReject.aspx.designer.cs">
+      <DependentUpon>AddBookReject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddBookReturn.aspx.cs">
+      <DependentUpon>AddBookReturn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddBookReturn.aspx.designer.cs">
+      <DependentUpon>AddBookReturn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddBookSales.aspx.cs">
+      <DependentUpon>AddBookSales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddBookSales.aspx.designer.cs">
+      <DependentUpon>AddBookSales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddBookSpacimen.aspx.cs">
+      <DependentUpon>AddBookSpacimen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddBookSpacimen.aspx.designer.cs">
+      <DependentUpon>AddBookSpacimen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddCoverReceived.aspx.cs">
+      <DependentUpon>AddCoverReceived.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddCoverReceived.aspx.designer.cs">
+      <DependentUpon>AddCoverReceived.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddCoverSupply.aspx.cs">
+      <DependentUpon>AddCoverSupply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddCoverSupply.aspx.designer.cs">
+      <DependentUpon>AddCoverSupply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddDailyCashReport.aspx.cs">
+      <DependentUpon>AddDailyCashReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddDailyCashReport.aspx.designer.cs">
+      <DependentUpon>AddDailyCashReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddDistrict.aspx.cs">
+      <DependentUpon>AddDistrict.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddDistrict.aspx.designer.cs">
+      <DependentUpon>AddDistrict.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddDivision.aspx.cs">
+      <DependentUpon>AddDivision.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddDivision.aspx.designer.cs">
+      <DependentUpon>AddDivision.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddEmployee.aspx.cs">
+      <DependentUpon>AddEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddEmployee.aspx.designer.cs">
+      <DependentUpon>AddEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddEmployeeBillEntry.aspx.cs">
+      <DependentUpon>AddEmployeeBillEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddEmployeeBillEntry.aspx.designer.cs">
+      <DependentUpon>AddEmployeeBillEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddEmployeeLedger.aspx.cs">
+      <DependentUpon>AddEmployeeLedger.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddEmployeeLedger.aspx.designer.cs">
+      <DependentUpon>AddEmployeeLedger.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddEmployeeSalaryPayment.aspx.cs">
+      <DependentUpon>AddEmployeeSalaryPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddEmployeeSalaryPayment.aspx.designer.cs">
+      <DependentUpon>AddEmployeeSalaryPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddGroup.aspx.cs">
+      <DependentUpon>AddGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddGroup.aspx.designer.cs">
+      <DependentUpon>AddGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddLiminationInfo.aspx.cs">
+      <DependentUpon>AddLiminationInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddLiminationInfo.aspx.designer.cs">
+      <DependentUpon>AddLiminationInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddLoanParty.aspx.cs">
+      <DependentUpon>AddLoanParty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddLoanParty.aspx.designer.cs">
+      <DependentUpon>AddLoanParty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddLoanPartyLedger.aspx.cs">
+      <DependentUpon>AddLoanPartyLedger.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddLoanPartyLedger.aspx.designer.cs">
+      <DependentUpon>AddLoanPartyLedger.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddMainBook.aspx.cs">
+      <DependentUpon>AddMainBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddMainBook.aspx.designer.cs">
+      <DependentUpon>AddMainBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddMoneyReceipt.aspx.cs">
+      <DependentUpon>AddMoneyReceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddMoneyReceipt.aspx.designer.cs">
+      <DependentUpon>AddMoneyReceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddOtherBillPayment.aspx.cs">
+      <DependentUpon>AddOtherBillPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddOtherBillPayment.aspx.designer.cs">
+      <DependentUpon>AddOtherBillPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddOtherGroup.aspx.cs">
+      <DependentUpon>AddOtherGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddOtherGroup.aspx.designer.cs">
+      <DependentUpon>AddOtherGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddOthersLedger.aspx.cs">
+      <DependentUpon>AddOthersLedger.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddOthersLedger.aspx.designer.cs">
+      <DependentUpon>AddOthersLedger.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddPaper.aspx.cs">
+      <DependentUpon>AddPaper.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddPaper.aspx.designer.cs">
+      <DependentUpon>AddPaper.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddPaperOrder.aspx.cs">
+      <DependentUpon>AddPaperOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddPaperOrder.aspx.designer.cs">
+      <DependentUpon>AddPaperOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddPaperPrint.aspx.cs">
+      <DependentUpon>AddPaperPrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddPaperPrint.aspx.designer.cs">
+      <DependentUpon>AddPaperPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddPaperTransfer.aspx.cs">
+      <DependentUpon>AddPaperTransfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddPaperTransfer.aspx.designer.cs">
+      <DependentUpon>AddPaperTransfer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddParty.aspx.cs">
+      <DependentUpon>AddParty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddParty.aspx.designer.cs">
+      <DependentUpon>AddParty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddPersonalLoanTaken.aspx.cs">
+      <DependentUpon>AddPersonalLoanTaken.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddPersonalLoanTaken.aspx.designer.cs">
+      <DependentUpon>AddPersonalLoanTaken.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddpressInfo.aspx.cs">
+      <DependentUpon>AddpressInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddpressInfo.aspx.designer.cs">
+      <DependentUpon>AddpressInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddShope.aspx.cs">
+      <DependentUpon>AddShope.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddShope.aspx.designer.cs">
+      <DependentUpon>AddShope.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddSpacymenParty.aspx.cs">
+      <DependentUpon>AddSpacymenParty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddSpacymenParty.aspx.designer.cs">
+      <DependentUpon>AddSpacymenParty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddSupplierBillEntry.aspx.cs">
+      <DependentUpon>AddSupplierBillEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddSupplierBillEntry.aspx.designer.cs">
+      <DependentUpon>AddSupplierBillEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddSupplierBillPayment.aspx.cs">
+      <DependentUpon>AddSupplierBillPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddSupplierBillPayment.aspx.designer.cs">
+      <DependentUpon>AddSupplierBillPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddSupplierInfo.aspx.cs">
+      <DependentUpon>AddSupplierInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddSupplierInfo.aspx.designer.cs">
+      <DependentUpon>AddSupplierInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddSupplierLedger.aspx.cs">
+      <DependentUpon>AddSupplierLedger.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddSupplierLedger.aspx.designer.cs">
+      <DependentUpon>AddSupplierLedger.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddWritter.aspx.cs">
+      <DependentUpon>AddWritter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AddWritter.aspx.designer.cs">
+      <DependentUpon>AddWritter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Index.Master.cs">
+      <DependentUpon>Index.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Index.Master.designer.cs">
+      <DependentUpon>Index.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\BankDepositReport.aspx.cs">
+      <DependentUpon>BankDepositReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ShowReport\BankDepositReport.aspx.designer.cs">
+      <DependentUpon>BankDepositReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\BinderOrderReport.aspx.cs">
+      <DependentUpon>BinderOrderReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ShowReport\BinderOrderReport.aspx.designer.cs">
+      <DependentUpon>BinderOrderReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\BinderReceiveReport.aspx.cs">
+      <DependentUpon>BinderReceiveReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ShowReport\BinderReceiveReport.aspx.designer.cs">
+      <DependentUpon>BinderReceiveReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\BookReturnReport.aspx.cs">
+      <DependentUpon>BookReturnReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ShowReport\BookReturnReport.aspx.designer.cs">
+      <DependentUpon>BookReturnReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\BookSalesReport.aspx.cs">
+      <DependentUpon>BookSalesReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ShowReport\BookSalesReport.aspx.designer.cs">
+      <DependentUpon>BookSalesReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\BookSpecimanReport.aspx.cs">
+      <DependentUpon>BookSpecimanReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ShowReport\BookSpecimanReport.aspx.designer.cs">
+      <DependentUpon>BookSpecimanReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\CoverReceivedReport.aspx.cs">
+      <DependentUpon>CoverReceivedReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ShowReport\CoverReceivedReport.aspx.designer.cs">
+      <DependentUpon>CoverReceivedReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\CoverSupplyReport.aspx.cs">
+      <DependentUpon>CoverSupplyReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ShowReport\CoverSupplyReport.aspx.designer.cs">
+      <DependentUpon>CoverSupplyReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\Ds_BankDeposit.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_BankDeposit.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\Ds_BinderOrder.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_BinderOrder.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\Ds_BinderReceive.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_BinderReceive.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\Ds_BookReturn.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_BookReturn.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\Ds_BookSales.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_BookSales.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\Ds_BookSpeciman.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_BookSpeciman.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\Ds_CoverReceived.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_CoverReceived.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\Ds_CoverSupply.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_CoverSupply.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\Ds_EmployeeBillEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_EmployeeBillEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\Ds_Emp_Party_Bank.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Emp_Party_Bank.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\Ds_MoneyReceipt.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_MoneyReceipt.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\Ds_OthersPayment.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_OthersPayment.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\Ds_PaperOrder.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_PaperOrder.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\Ds_SupplierBillEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_SupplierBillEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\Ds_SupplierBillPayment.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_SupplierBillPayment.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\DS_SupplierLedger.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_SupplierLedger.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\EmployeeBillEntryReport.aspx.cs">
+      <DependentUpon>EmployeeBillEntryReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ShowReport\EmployeeBillEntryReport.aspx.designer.cs">
+      <DependentUpon>EmployeeBillEntryReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\Emp_Party_BankReport.aspx.cs">
+      <DependentUpon>Emp_Party_BankReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ShowReport\Emp_Party_BankReport.aspx.designer.cs">
+      <DependentUpon>Emp_Party_BankReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\MoneyReceiptReport.aspx.cs">
+      <DependentUpon>MoneyReceiptReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ShowReport\MoneyReceiptReport.aspx.designer.cs">
+      <DependentUpon>MoneyReceiptReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\OthersPaymentReport.aspx.cs">
+      <DependentUpon>OthersPaymentReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ShowReport\OthersPaymentReport.aspx.designer.cs">
+      <DependentUpon>OthersPaymentReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\PaperOrderReport.aspx.cs">
+      <DependentUpon>PaperOrderReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ShowReport\PaperOrderReport.aspx.designer.cs">
+      <DependentUpon>PaperOrderReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\SupplierBillEntryReport.aspx.cs">
+      <DependentUpon>SupplierBillEntryReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ShowReport\SupplierBillEntryReport.aspx.designer.cs">
+      <DependentUpon>SupplierBillEntryReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\SupplierBillPaymentReport.aspx.cs">
+      <DependentUpon>SupplierBillPaymentReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ShowReport\SupplierBillPaymentReport.aspx.designer.cs">
+      <DependentUpon>SupplierBillPaymentReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowReport\SupplierLedgerReport.aspx.cs">
+      <DependentUpon>SupplierLedgerReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ShowReport\SupplierLedgerReport.aspx.designer.cs">
+      <DependentUpon>SupplierLedgerReport.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\ShowReport\BankDepositReport.rdlc" />
+    <EmbeddedResource Include="UI\ShowReport\BinderOrderReport.rdlc" />
+    <EmbeddedResource Include="UI\ShowReport\BinderReceiveReport.rdlc" />
+    <EmbeddedResource Include="UI\ShowReport\BookReturnReport.rdlc" />
+    <EmbeddedResource Include="UI\ShowReport\BookSalesReport.rdlc" />
+    <EmbeddedResource Include="UI\ShowReport\BookSpecimanReport.rdlc" />
+    <EmbeddedResource Include="UI\ShowReport\CoverReceivedReport.rdlc" />
+    <EmbeddedResource Include="UI\ShowReport\CoverSupplyReport.rdlc" />
+    <EmbeddedResource Include="UI\ShowReport\EmployeeBillEntryReport.rdlc" />
+    <EmbeddedResource Include="UI\ShowReport\Emp_Party_BankReport.rdlc" />
+    <EmbeddedResource Include="UI\ShowReport\MoneyReceiptReport.rdlc" />
+    <EmbeddedResource Include="UI\ShowReport\OthersPaymentReport.rdlc" />
+    <EmbeddedResource Include="UI\ShowReport\PaperOrderReport.rdlc" />
+    <EmbeddedResource Include="UI\ShowReport\SupplierBillEntryReport.rdlc" />
+    <EmbeddedResource Include="UI\ShowReport\SupplierBillPaymentReport.rdlc" />
+    <EmbeddedResource Include="UI\ShowReport\SupplierLedgerReport.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>9483</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:9483/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

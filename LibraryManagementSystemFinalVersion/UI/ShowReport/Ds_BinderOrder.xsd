@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_BinderOrder" targetNamespace="http://tempuri.org/Ds_BinderOrder.xsd" xmlns:mstns="http://tempuri.org/Ds_BinderOrder.xsd" xmlns="http://tempuri.org/Ds_BinderOrder.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="LibraryManagementApp" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LibraryManagementApp (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.LibraryManagementApp.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_binderOrderViewTableAdapter" GeneratorDataComponentClassName="tbl_binderOrderViewTableAdapter" Name="tbl_binderOrderView" UserDataComponentName="tbl_binderOrderViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LibraryManagementApp (Web.config)" DbObjectName="LibraryManagementSystemDB.dbo.tbl_binderOrderView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select * from tbl_binderOrderView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="date" DataSetColumn="date" />
+              <Mapping SourceColumn="year" DataSetColumn="year" />
+              <Mapping SourceColumn="order_no" DataSetColumn="order_no" />
+              <Mapping SourceColumn="binder_name" DataSetColumn="binder_name" />
+              <Mapping SourceColumn="group_code" DataSetColumn="group_code" />
+              <Mapping SourceColumn="book_code" DataSetColumn="book_code" />
+              <Mapping SourceColumn="quantity" DataSetColumn="quantity" />
+              <Mapping SourceColumn="forma_quantity" DataSetColumn="forma_quantity" />
+              <Mapping SourceColumn="press_name" DataSetColumn="press_name" />
+              <Mapping SourceColumn="forma" DataSetColumn="forma" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ds_BinderOrder" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Ds_BinderOrder" msprop:Generator_UserDSName="Ds_BinderOrder">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_binderOrderView" msprop:Generator_TableClassName="tbl_binderOrderViewDataTable" msprop:Generator_TableVarName="tabletbl_binderOrderView" msprop:Generator_TablePropName="tbl_binderOrderView" msprop:Generator_RowDeletingName="tbl_binderOrderViewRowDeleting" msprop:Generator_RowChangingName="tbl_binderOrderViewRowChanging" msprop:Generator_RowEvHandlerName="tbl_binderOrderViewRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_binderOrderViewRowDeleted" msprop:Generator_UserTableName="tbl_binderOrderView" msprop:Generator_RowChangedName="tbl_binderOrderViewRowChanged" msprop:Generator_RowEvArgName="tbl_binderOrderViewRowChangeEvent" msprop:Generator_RowClassName="tbl_binderOrderViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="date" msprop:Generator_ColumnVarNameInTable="columndate" msprop:Generator_ColumnPropNameInRow="date" msprop:Generator_ColumnPropNameInTable="dateColumn" msprop:Generator_UserColumnName="date" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="year" msprop:Generator_ColumnVarNameInTable="columnyear" msprop:Generator_ColumnPropNameInRow="year" msprop:Generator_ColumnPropNameInTable="yearColumn" msprop:Generator_UserColumnName="year" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="order_no" msprop:Generator_ColumnVarNameInTable="columnorder_no" msprop:Generator_ColumnPropNameInRow="order_no" msprop:Generator_ColumnPropNameInTable="order_noColumn" msprop:Generator_UserColumnName="order_no" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="binder_name" msprop:Generator_ColumnVarNameInTable="columnbinder_name" msprop:Generator_ColumnPropNameInRow="binder_name" msprop:Generator_ColumnPropNameInTable="binder_nameColumn" msprop:Generator_UserColumnName="binder_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="group_code" msprop:Generator_ColumnVarNameInTable="columngroup_code" msprop:Generator_ColumnPropNameInRow="group_code" msprop:Generator_ColumnPropNameInTable="group_codeColumn" msprop:Generator_UserColumnName="group_code" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="book_code" msprop:Generator_ColumnVarNameInTable="columnbook_code" msprop:Generator_ColumnPropNameInRow="book_code" msprop:Generator_ColumnPropNameInTable="book_codeColumn" msprop:Generator_UserColumnName="book_code" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="quantity" msprop:Generator_ColumnVarNameInTable="columnquantity" msprop:Generator_ColumnPropNameInRow="quantity" msprop:Generator_ColumnPropNameInTable="quantityColumn" msprop:Generator_UserColumnName="quantity" type="xs:double" minOccurs="0" />
+              <xs:element name="forma_quantity" msprop:Generator_ColumnVarNameInTable="columnforma_quantity" msprop:Generator_ColumnPropNameInRow="forma_quantity" msprop:Generator_ColumnPropNameInTable="forma_quantityColumn" msprop:Generator_UserColumnName="forma_quantity" type="xs:double" minOccurs="0" />
+              <xs:element name="press_name" msprop:Generator_ColumnVarNameInTable="columnpress_name" msprop:Generator_ColumnPropNameInRow="press_name" msprop:Generator_ColumnPropNameInTable="press_nameColumn" msprop:Generator_UserColumnName="press_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="forma" msprop:Generator_ColumnVarNameInTable="columnforma" msprop:Generator_ColumnPropNameInRow="forma" msprop:Generator_ColumnPropNameInTable="formaColumn" msprop:Generator_UserColumnName="forma" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

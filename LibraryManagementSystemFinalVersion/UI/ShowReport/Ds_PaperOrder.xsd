@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_PaperOrder" targetNamespace="http://tempuri.org/Ds_PaperOrder.xsd" xmlns:mstns="http://tempuri.org/Ds_PaperOrder.xsd" xmlns="http://tempuri.org/Ds_PaperOrder.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="LibraryManagementApp" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LibraryManagementApp (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.LibraryManagementApp.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_paperOrderViewTableAdapter" GeneratorDataComponentClassName="tbl_paperOrderViewTableAdapter" Name="tbl_paperOrderView" UserDataComponentName="tbl_paperOrderViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LibraryManagementApp (Web.config)" DbObjectName="LibraryManagementSystemDB.dbo.tbl_paperOrderView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select * from tbl_paperOrderView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="date" DataSetColumn="date" />
+              <Mapping SourceColumn="supplier_name" DataSetColumn="supplier_name" />
+              <Mapping SourceColumn="slip_no" DataSetColumn="slip_no" />
+              <Mapping SourceColumn="press_code" DataSetColumn="press_code" />
+              <Mapping SourceColumn="paper_name" DataSetColumn="paper_name" />
+              <Mapping SourceColumn="paper_type" DataSetColumn="paper_type" />
+              <Mapping SourceColumn="quantity" DataSetColumn="quantity" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ds_PaperOrder" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Ds_PaperOrder" msprop:Generator_UserDSName="Ds_PaperOrder">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_paperOrderView" msprop:Generator_TableClassName="tbl_paperOrderViewDataTable" msprop:Generator_TableVarName="tabletbl_paperOrderView" msprop:Generator_TablePropName="tbl_paperOrderView" msprop:Generator_RowDeletingName="tbl_paperOrderViewRowDeleting" msprop:Generator_RowChangingName="tbl_paperOrderViewRowChanging" msprop:Generator_RowEvHandlerName="tbl_paperOrderViewRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_paperOrderViewRowDeleted" msprop:Generator_UserTableName="tbl_paperOrderView" msprop:Generator_RowChangedName="tbl_paperOrderViewRowChanged" msprop:Generator_RowEvArgName="tbl_paperOrderViewRowChangeEvent" msprop:Generator_RowClassName="tbl_paperOrderViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="date" msprop:Generator_ColumnVarNameInTable="columndate" msprop:Generator_ColumnPropNameInRow="date" msprop:Generator_ColumnPropNameInTable="dateColumn" msprop:Generator_UserColumnName="date" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="supplier_name" msprop:Generator_ColumnVarNameInTable="columnsupplier_name" msprop:Generator_ColumnPropNameInRow="supplier_name" msprop:Generator_ColumnPropNameInTable="supplier_nameColumn" msprop:Generator_UserColumnName="supplier_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="slip_no" msprop:Generator_ColumnVarNameInTable="columnslip_no" msprop:Generator_ColumnPropNameInRow="slip_no" msprop:Generator_ColumnPropNameInTable="slip_noColumn" msprop:Generator_UserColumnName="slip_no" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="press_code" msprop:Generator_ColumnVarNameInTable="columnpress_code" msprop:Generator_ColumnPropNameInRow="press_code" msprop:Generator_ColumnPropNameInTable="press_codeColumn" msprop:Generator_UserColumnName="press_code" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="paper_name" msprop:Generator_ColumnVarNameInTable="columnpaper_name" msprop:Generator_ColumnPropNameInRow="paper_name" msprop:Generator_ColumnPropNameInTable="paper_nameColumn" msprop:Generator_UserColumnName="paper_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="paper_type" msprop:Generator_ColumnVarNameInTable="columnpaper_type" msprop:Generator_ColumnPropNameInRow="paper_type" msprop:Generator_ColumnPropNameInTable="paper_typeColumn" msprop:Generator_UserColumnName="paper_type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="quantity" msprop:Generator_ColumnVarNameInTable="columnquantity" msprop:Generator_ColumnPropNameInRow="quantity" msprop:Generator_ColumnPropNameInTable="quantityColumn" msprop:Generator_UserColumnName="quantity" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

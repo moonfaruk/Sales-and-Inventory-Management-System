@@ -1,0 +1,236 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Index.master.cs" Inherits="LibraryManagementSystemFinalVersion.UI.Index" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Sales & Inventory Management System </title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" rel="Stylesheet" type="text/css" />
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="../Content/bootstrap-datepicker.css" rel="stylesheet" />
+    <link href="../Content/themes/base/datepicker.css" rel="stylesheet" />
+    <link href="../Content/themes/ui-darkness/jquery-ui.ui-darkness.css" rel="stylesheet" />
+	<!-- Custom CSS -->
+    <link href="../Content/custom-style.css" rel="stylesheet" />
+    
+  
+
+</head>
+<body style="background: #B1AC83;">
+
+    <div class="container">
+        <div class="row">
+            <!--nav row -->
+            <div class="col-sm-12">
+
+                <nav class="navbar navbar-inverse" <%--style="background: #9E9868;border: 1px solid #9E9868; box-shadow:0px 0px 10px #3D3825;--%>">
+                   
+
+                    <div id="navbar">
+                       
+                        <ul class="nav nav-pills">
+                            <li><a href="Home.aspx">Home</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    SetUp <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="AddDivision.aspx">Add Division</a></li>
+                                    <li><a href="AddDistrict.aspx">Add District</a></li>
+                                    <li><a href="AddPaper.aspx">Add Paper Type Info</a></li>
+                                    <li><a href="AddSupplierInfo.aspx">Supplier Information</a></li>
+                                    <li><a href="AddpressInfo.aspx">Press Information</a></li>
+                                    <li><a href="AddLiminationInfo.aspx">Plate Pasting Limination Information</a></li>
+                                    <li><a href="AddEmployee.aspx">Employee Information</a></li>
+                                    <li><a href="AddLoanParty.aspx">Loan Information</a></li>
+                                    <li><a href="AddBankAccount.aspx">BankAccount Information</a></li>
+                                    <li><a href="AddShope.aspx">Shope Information</a></li>
+                                    <li><a href="AddParty.aspx">Party Information</a></li>
+                                    <li><a href="AddBinder.aspx">Binder Information</a></li>
+                                    <li><a href="AddGroup.aspx">Group Information</a></li>
+                                    <li><a href="AddSpacymenParty.aspx">Spacymen Party Information</a></li>
+                                    <li><a href="AddOtherGroup.aspx">Other Group Information</a></li>
+                                    <li><a href="AddWritter.aspx">Writter Information</a></li>
+                                    <li><a href="AddMainBook.aspx">MainBook Information</a></li>
+                                    <li><a href="AddBookInfo.aspx">Book Information</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    Order<span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="AddBinderOrder.aspx">Binder Order</a></li>
+                                    <li><a href="AddBinderOrderCancel.aspx">Binder Order Cancel</a></li>
+                                     <li><a href="AddBinderReceive.aspx">Binder Receive</a></li>
+                                     <li><a href="AddPaperOrder.aspx">Paper Order</a></li>
+                                     <li><a href="AddPaperPrint.aspx">Paper Print</a></li>
+                                     <li><a href="AddPaperTransfer.aspx">Paper Transfer</a></li>
+                                     <li><a href="AddCoverReceived.aspx">Cover Received</a></li>
+                                      <li><a href="AddCoverSupply.aspx">Cover Supply</a></li>
+                                </ul>
+                            </li>
+                            
+                             <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    Sales Return<span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    
+                                    <li><a href="AddBookSales.aspx">Book Sales</a></li>
+                                    <li><a href="AddBookReturn.aspx">Book Return</a></li>
+                                    <li><a href="AddBookSpacimen.aspx">Book Spacimen</a></li>
+                                    <li><a href="AddMoneyReceipt.aspx">Money Receipt</a></li>
+                                    <li><a href="AddBookReject.aspx">Book Stock Reject</a></li>
+                                    <li><a href="AddBonus.aspx">Bonus</a></li>
+                                </ul>
+                            </li>
+                            
+                             <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    Register <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                     <li><a href="#">Small Sales Register</a></li>
+                                     <li><a href="#">Daily Collection Register</a></li>
+                                     <li><a href="#">Item Information Register</a></li>
+                                     <li><a href="#">Party Information Register</a></li>
+                                     <li><a href="#">Party Information Date Wise</a></li>
+                                     <li><a href="#">Item Received Register</a></li>
+                                     <li><a href="#">Item Sales Register</a></li>
+                                     <li><a href="#">Yearly Bonus Register</a></li>
+                                     <li><a href="#">Party Leger Details</a></li>
+                                     <li><a href="#">Money Receipt Party Ledger</a></li>
+                                     <li><a href="#">Party Dues Ledger</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    Report <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Party Balance Report</a></li>
+                                    <li><a href="#">Item Stock Report</a></li>
+                                    <li><a href="#">Supplier Register Details</a></li>
+                                    <li><a href="#">Party Dues Summerise</a></li>
+                                    <li><a href="#">Party Dues Memo Wise</a></li>
+                                    <li><a href="#">Party Opening Balance</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    Ac. Bill Entry <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="AddSupplierBillEntry.aspx">Supplier Bill Entry</a></li>
+                                    <li><a href="AddEmployeeBillEntry.aspx">Employee Salary Entry</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    Ac. Bill Payment <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="AddOtherBillPayment.aspx">Others Bill Payment</a></li>
+                                    <li><a href="AddSupplierBillPayment.aspx">Supplier Bill Payment</a></li>
+                                    <li><a href="AddPersonalLoanTaken.aspx">Personal Loan Payment</a></li>
+                                    <li><a href="AddEmployeeSalaryPayment.aspx">Emp. Salary Payment</a></li>
+                                    <li><a href="AddBankDeposit.aspx">Bank Deposit</a></li>
+                                    <li><a href="AddBankWithdraw.aspx">Bank Withdraw</a></li>
+                                </ul>
+                            </li>
+                            
+                            
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    Ac. Reports <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="AddSupplierLedger.aspx">Supplier Ledger</a></li>
+                                    <li><a href="AddOthersLedger.aspx">Other Expense Ledger</a></li>
+                                    <li><a href="AddEmployeeLedger.aspx">Employee Ledger</a></li>
+                                    <li><a href="AddBankLedger.aspx">Bank Ledger</a></li>
+                                    <li><a href="AddLoanPartyLedger.aspx">Loan Party Ledger</a></li>
+                                    <li><a href="AddDailyCashReport.aspx">Daily Cash Report</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li><a href="#">Create User</a></li>
+                            <li><a href="#">Window</a></li>
+                        </ul>
+                       
+                    </div>
+                  
+                </nav>
+
+            </div>
+        </div>
+        <!--end nav row-->
+
+        <!--body row-->
+        <div class="row">
+            <div class="col-sm-3">
+                <asp:ContentPlaceHolder ID="leftContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+            </div>
+            <div class="col-sm-7">
+
+                <asp:ContentPlaceHolder ID="middleContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+
+            </div>
+            <div class="col-sm-2">
+
+                <asp:ContentPlaceHolder ID="rightContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+
+            </div>
+        </div>
+        <!--end body row-->
+        
+
+
+        <!--body row background-->
+        <div class="row">
+            <div class="col-sm-12">
+                <asp:ContentPlaceHolder ID="backgroundImageContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <!--end body row background-->
+
+        <%--<!--body row full middle-->
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <asp:ContentPlaceHolder ID="fullMiddleContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        <!--end body row full middle-->--%>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel-footer"<%-- style="background: #9E9868; border: 1px solid #9E9868;--%>">
+                    <p style="text-align: center"> &copy; 2015, <b>Design & Developed By Micron-Techno</b></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+   
+    <script src="../Scripts/jquery.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+    <script src="../Scripts/bootstrap-datepicker.min.js"></script>
+    <script src="../Scripts/jquery.validate.min.js"></script>
+    <script src="../Scripts/jquery-ui-1.11.4.min.js"></script>
+
+</body>
+</html>
+ 

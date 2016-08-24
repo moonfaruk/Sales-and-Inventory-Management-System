@@ -1,0 +1,35 @@
+﻿
+/* GridView Style sheet */
+table#middleContentPlaceHolder_showbankAccountInfoGridView tbody tr th, table#middleContentPlaceHolder_showbankAccountInfoGridView tbody tr td {
+    text-align: center;
+}
+
+table#middleContentPlaceHolder_showShopInfoGridView tbody tr th, table#middleContentPlaceHolder_showShopInfoGridView tbody tr td {
+    text-align: center;
+}
+
+.customize .panel.panel-success .panel-heading .panel-title {
+    text-align: center;
+}
+
+.text-center-save {
+    text-align: center;
+    margin-top: 20px;
+    color: forestgreen;
+}
+
+.text-center-error {
+    text-align: center;
+    margin-top: 20px;
+    color: red;
+}
+
+.text_center {
+    margin: 0 auto;
+}
+
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 5px;
+}

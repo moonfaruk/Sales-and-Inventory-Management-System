@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_CoverSupply" targetNamespace="http://tempuri.org/Ds_CoverSupply.xsd" xmlns:mstns="http://tempuri.org/Ds_CoverSupply.xsd" xmlns="http://tempuri.org/Ds_CoverSupply.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="LibraryManagementApp" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LibraryManagementApp (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.LibraryManagementApp.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_coverSupplyViewTableAdapter" GeneratorDataComponentClassName="tbl_coverSupplyViewTableAdapter" Name="tbl_coverSupplyView" UserDataComponentName="tbl_coverSupplyViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LibraryManagementApp (Web.config)" DbObjectName="LibraryManagementSystemDB.dbo.tbl_coverSupplyView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select * from tbl_coverSupplyView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="date" DataSetColumn="date" />
+              <Mapping SourceColumn="supply_no" DataSetColumn="supply_no" />
+              <Mapping SourceColumn="binder_name" DataSetColumn="binder_name" />
+              <Mapping SourceColumn="group_name" DataSetColumn="group_name" />
+              <Mapping SourceColumn="book_name" DataSetColumn="book_name" />
+              <Mapping SourceColumn="quantity" DataSetColumn="quantity" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ds_CoverSupply" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Ds_CoverSupply" msprop:Generator_UserDSName="Ds_CoverSupply">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_coverSupplyView" msprop:Generator_TableClassName="tbl_coverSupplyViewDataTable" msprop:Generator_TableVarName="tabletbl_coverSupplyView" msprop:Generator_TablePropName="tbl_coverSupplyView" msprop:Generator_RowDeletingName="tbl_coverSupplyViewRowDeleting" msprop:Generator_RowChangingName="tbl_coverSupplyViewRowChanging" msprop:Generator_RowEvHandlerName="tbl_coverSupplyViewRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_coverSupplyViewRowDeleted" msprop:Generator_UserTableName="tbl_coverSupplyView" msprop:Generator_RowChangedName="tbl_coverSupplyViewRowChanged" msprop:Generator_RowEvArgName="tbl_coverSupplyViewRowChangeEvent" msprop:Generator_RowClassName="tbl_coverSupplyViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="date" msprop:Generator_ColumnVarNameInTable="columndate" msprop:Generator_ColumnPropNameInRow="date" msprop:Generator_ColumnPropNameInTable="dateColumn" msprop:Generator_UserColumnName="date" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="supply_no" msprop:Generator_ColumnVarNameInTable="columnsupply_no" msprop:Generator_ColumnPropNameInRow="supply_no" msprop:Generator_ColumnPropNameInTable="supply_noColumn" msprop:Generator_UserColumnName="supply_no" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="binder_name" msprop:Generator_ColumnVarNameInTable="columnbinder_name" msprop:Generator_ColumnPropNameInRow="binder_name" msprop:Generator_ColumnPropNameInTable="binder_nameColumn" msprop:Generator_UserColumnName="binder_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="group_name" msprop:Generator_ColumnVarNameInTable="columngroup_name" msprop:Generator_ColumnPropNameInRow="group_name" msprop:Generator_ColumnPropNameInTable="group_nameColumn" msprop:Generator_UserColumnName="group_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="book_name" msprop:Generator_ColumnVarNameInTable="columnbook_name" msprop:Generator_ColumnPropNameInRow="book_name" msprop:Generator_ColumnPropNameInTable="book_nameColumn" msprop:Generator_UserColumnName="book_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="quantity" msprop:Generator_ColumnVarNameInTable="columnquantity" msprop:Generator_ColumnPropNameInRow="quantity" msprop:Generator_ColumnPropNameInTable="quantityColumn" msprop:Generator_UserColumnName="quantity" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
